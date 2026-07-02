@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        nav {
+            background-color: #1e2da1;
+            list-style-type: none;
+            margin: 0;
+            padding: 0px;
+            overflow: hidden;
+        }
+
+        a {
+            float: left;
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: #131e70;
+        }
+
+        .software {
+            height: 50px;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./my-work.html">My Work</a>
+        <a href="./service.html">Service</a>
+        <a href="./order.html">Order</a>
+        <a href="./contact-us.html">Contact Us</a>
+    </nav>
+
+    <h1>Order Now</h1>
+
+    Fill the form below for order Our Service
+
+    <form>
+        <!-- "Name" wajib ada pada input untuk record di database
+     "id" digunakan untuk logical di JavaScript
+     "for" digunakan untuk saling terhubung antara label dengan input -->
+        <div class="name">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div class="email">
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div class="phone">
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone">
+        </div>
+        <div class="deadline">
+            <label for="deadline">Deadline Date</label>
+            <input type="date" name="deadline" id="deadline">
+        </div>
+        <div class="service">
+            <p>Service Type</p>
+            <input type="radio" name="service" id="service">
+            <label for="service">Short Video</label>
+            <input type="radio" name="service" id="service">
+            <label for="service">Medium Video</label>
+            <input type="radio" name="service" id="service">
+            <label for="service">Long Video</label>
+        </div>
+        <div class="price">
+            <label for="price">Price</label>
+            <select name="price" id="price">
+                <option value="0">0</option>
+                <option value="200000">200,000</option>
+                <option value="500000">500,000</option>
+                <option value="1500000">1,500,000</option>
+            </select>
+        </div>
+        <div class="item">
+            <p>Item you need</p>
+            <input type="checkbox" name="footage" id="footage">
+            <label for="footage">Footage</label>
+            <input type="checkbox" name="backsound" id="backsound">
+            <label for="backsound">Background Music</label>
+            <input type="checkbox" name="sfx" id="sfx">
+            <label for="sfx">Sound Effects</label>
+            <input type="checkbox" name="lowerthird" id="lowerthird">
+            <label for="lowerthird">Lowerthird</label>
+            <input type="checkbox" name="bumper" id="bumper">
+            <label for="bumper">Bumper</label>
+        </div>
+        <div>
+            <label for="final-price">Final Price</label>
+            <select name="final-price" id="final-price">
+                <option value="auto">--Auto--</option>
+            </select>
+        </div>
+        <div>
+            <label for="notes">Additional Notes</label><br>
+            <textarea name="notes" id="notes" rows="5" cols="100" placeholder="Add notes..."></textarea>
+        </div>
+    </form>
+</body>
+
+</html>
