@@ -26,5 +26,6 @@ a:hover {
 body {
     font-family: 'Quicksand', sans-serif;
     background-image: url(../assets/hotel.png);
-    background-size: 100%;
+    background-position: right;
+    background-size: 50%;
 }
