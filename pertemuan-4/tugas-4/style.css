@@ -40,10 +40,10 @@ section {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    padding: 100px 20px;
     background-image:
         linear-gradient(hsla(240, 69%, 28%, 0.4), hsla(240, 69%, 28%, 0.7)),
-        url(../../assets/bg-headline.png);
+        url(https://raw.githubusercontent.com/elbas-dief/starterkit/refs/heads/main/assets/bg-headline.png);
     background-size: cover;
     background-position: center;
     color: white;
@@ -55,6 +55,8 @@ section {
 
 .sub-headline {
     margin: 10px;
+    /* background-color: white; */
+    padding: 0px 300px;
 }
 
 .pelajari {
@@ -75,9 +77,27 @@ section {
     box-shadow: 0px 0px 4px 1px white inset, 0px 0px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
+/* button {
+    background: linear-gradient(#2626a5);
+    margin: 5px;
+    border-radius: 5px;
+    padding: 7px;
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0px 0px 4px 1px white inset;
+    transition: transform 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 4px 1px white inset, 0px 0px 2px 1px rgba(0, 0, 0, 0.5);
+} */
+
 main {
     /* background-color: rgb(238, 238, 238); */
-    background-image: linear-gradient(rgba(255, 255, 255, 0.2)), url(../../assets/bg-section.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2)), url(https://raw.githubusercontent.com/elbas-dief/starterkit/refs/heads/main/assets/bg-section.png);
     background-size: cover;
     background-position: center;
     margin: 0px;
@@ -91,7 +111,8 @@ main {
 .service-card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2px;
+    /* grid-template-columns: repeat(auto-fit, minmax(20px)); */
+    /* gap: 0px; */
     /* min-height: 200px; */
 }
 
@@ -116,6 +137,7 @@ main {
 .bangun {
     background-image: linear-gradient(hsla(240, 63%, 40%, 0.8)), url(https://asset.kompas.com/crops/x5gmRVWN7ymzwsz7k0NVtOqBlvM=/100x67:900x600/1200x800/data/photo/2020/12/23/5fe2932454f98.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .renovasi {
@@ -126,6 +148,7 @@ main {
 .desain-rab {
     background-image: linear-gradient(hsla(240, 63%, 40%, 0.8)), url(https://blog.bankmega.com/wp-content/uploads/2025/03/Rencana-Anggaran-Biaya-RAB-Pengertian-Fungsi-Contohnya.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 /* .title-service {
