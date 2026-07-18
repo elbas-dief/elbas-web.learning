@@ -3,18 +3,25 @@ function greeting() {
     console.log("Saya sedang belajar");
 }
 
-greeting()
-
 function kenalan (nama, umur) {
-    console.log("Kenalin nama saya");
+    console.log(`Kenalin nama saya ${nama}`);
+    console.log(`Umur saya ${umur}`);
+    }
+
+greeting()
+console.log(`\n`);
+kenalan ("Elbas", "33 tahun")
+
+function jumlahHarga(harga, qty) {
+    return harga * qty
 }
 
-kenalan (nama, 27)
+console.log(jumlahHarga (100000, 5));
 
-const produk = [
-  { nama: "Laptop", harga: "Rp 9.990.000" },
-  { nama: "Mouse",  harga: "Rp 150.000" },
-];
+// const produk = [
+//   { nama: "Laptop", harga: "Rp 9.990.000" },
+//   { nama: "Mouse",  harga: "Rp 150.000" },
+// ];
 
 // function render() {
 //   const container = document.getElementById("daftarProduk");
@@ -31,8 +38,8 @@ const produk = [
 // //   });
 // }
 
-const judul = document.getElementById("daftarProduk");
+// const judul = document.getElementById("daftarProduk");
 
-judul.textContent = "Teks Baru";     // ubah teks (aman)
-judul.innerHTML = "<b>Teks Baru</b>";// ubah isi HTML (boleh ada tag)
-judul.style.color = "red"; 
+// judul.textContent = "Teks Baru";     // ubah teks (aman)
+// judul.innerHTML = "<b>Teks Baru</b>";// ubah isi HTML (boleh ada tag)
+// judul.style.color = "red"; 
