@@ -49,16 +49,24 @@ switch (hari) {                     // Jika hari...
 }
 
 
-// For Loop
-for (let i = 1; i <= 5; i++) {
-  console.log("Hitungan ke-" + i);
-}
+// // For Loop
+// for (let i = 1; i <= 5; i++) {
+//   console.log("Hitungan ke-" + i);
+// }
 
-for (let i = 10; i >= 0; i--) {
-  console.log("Hitungan ke-" + i);
-}
+// for (let i = 10; i >= 0; i--) {
+//   console.log("Hitungan ke-" + i);
+// }
 
-for (let i = 1; i <= 10; i++) {         // (var, angka start, batas akhir, langkah plus/minus)
-  console.log(`7 x ${i} = ${7 * i}`);
-}
+// for (let i = 1; i <= 10; i++) {         // (var, angka start, batas akhir, langkah/treatment plus/minus)
+//   console.log(`7 x ${i} = ${7 * i}`);
+// }
 
+let hargaHarian = [30000, 45000, 20000, 55000, 15000];
+let totalMinggu = 0;
+
+for (let i = 0; i < hargaHarian.length; i++) {    
+  totalMinggu += hargaHarian[i];
+  }
+
+console.log("Total pengeluaran: Rp " + totalMinggu);
